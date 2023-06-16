@@ -100,6 +100,13 @@
             <version>3.14.1</version>
             <classifier>standalone</classifier>
         </dependency>
+        <!-- Jackson depenency for serialising JodaTime -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.15.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
