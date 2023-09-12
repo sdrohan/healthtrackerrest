@@ -14,6 +14,7 @@ class JavalinConfig {
         val app = Javalin.create{
             //added this jsonMapper for our integration tests - serialise objects to json
             it.jsonMapper(JavalinJackson(jsonObjectMapper()))
+            //added Vue capabilities
             it.staticFiles.enableWebjars()
             it.vue.vueAppName = "app" // only required for Vue 3, is defined in layout.html
         }.apply {
