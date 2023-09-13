@@ -20,6 +20,7 @@
         <dokka.version>1.7.20</dokka.version>
     </properties>
 
+    <!-- Location of the Maven Plugin for Dokka -->
     <pluginRepositories>
         <pluginRepository>
             <id>jcenter</id>
@@ -27,6 +28,7 @@
             <url>https://jcenter.bintray.com/</url>
         </pluginRepository>
     </pluginRepositories>
+
 
     <dependencies>
         <dependency>
@@ -197,6 +199,7 @@
                 </configuration>
             </plugin>
 
+            <!-- Maven Plugin for Dokka - basic configuration -->
             <plugin>
                 <groupId>org.jetbrains.dokka</groupId>
                 <artifactId>dokka-maven-plugin</artifactId>
