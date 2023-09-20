@@ -14,12 +14,14 @@ import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
-//retrieving some test data from Fixtures
-val user1 = users.get(0)
-val user2 = users.get(1)
-val user3 = users.get(2)
 
 class UserDAOTest {
+
+    //retrieving some test data from Fixtures
+    val user1 = users.get(0)
+    val user2 = users.get(1)
+    val user3 = users.get(2)
+
 
     companion object {
 

@@ -30,15 +30,15 @@
             <input type="email" class="form-control" v-model="formData.email" name="email" placeholder="Email"/>
           </div>
         </form>
-        <button rel="tooltip" title="Update" class="btn btn-info btn-simple btn-link" @click="addUser()">Add User
+        <button rel="tooltip" title="AddUser" class="btn btn-info btn-simple btn-link" @click="addUser()">Add User
         </button>
       </div>
     </div>
-    <div class="list-group list-group-flush">
-      <div class="list-group-item d-flex align-items-start"
+    <div class="list-group list-group-flush" name="list-group">
+      <div class="list-group-item d-flex align-items-start"  name="list-group-item"
            v-for="(user,index) in users" v-bind:key="index">
-        <div class="mr-auto p-2">
-          <span><a :href="`/users/${user.id}`"> {{ user.name }} ({{ user.email }})</a></span>
+      <div class="mr-auto p-2">
+          <span><a :href="`/users/${user.id}`">{{ user.name }} ({{ user.email }})</a></span>
         </div>
         <div class="p2">
           <a :href="`/users/${user.id}`">
